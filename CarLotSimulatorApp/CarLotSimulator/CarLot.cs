@@ -7,9 +7,11 @@ namespace CarLotSimulator
 {
     public class CarLot {
         //property:
-        public List<Car> ParkingLot = new List<Car>(); 
+        public List<Car> ParkingLot { get; set; } = new List<Car>(); 
         
-    }  
+        
+    } 
+
     
 }
  

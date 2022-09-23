@@ -19,14 +19,14 @@ namespace CarLotSimulator
         public bool IsDrivable { get; set; }
 
         //constructor
-        public Car(int year,string make, string model, string engineNoise, string honkNoise, bool isDrivable)
+        public Car(int yearInput,string makeInput, string modelInput, string engineNoiseInput, string honkNoiseInput, bool isDrivableInput)
         {
-            Year = year;
-            Make = make;
-            Model = model;
-            EngineNoise = engineNoise;
-            HonkNoise = honkNoise;
-            IsDrivable = isDrivable;
+            Year = yearInput;
+            Make = makeInput;
+            Model = modelInput;
+            EngineNoise = engineNoiseInput;
+            HonkNoise = honkNoiseInput;
+            IsDrivable = isDrivableInput;
         }
 
         //methods:

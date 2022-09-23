@@ -18,7 +18,8 @@ namespace CarLotSimulator
             //Set the properties for each of the cars
             //Call each of the methods for each car
             var carLot = new CarLot();
-            
+            //carLot.ParkingLot = new List<Car>();   alternatively can be done in CarLot.cs
+
             // 1) .notation
             var car1 = new Car();
             car1.Year = 2016;
@@ -26,8 +27,10 @@ namespace CarLotSimulator
             car1.Model = "Micra";
             car1.EngineNoise = "Engine noise.";
             car1.HonkNoise = "Honk!";
-            car1.MakeEngineNoise();
-            car1.MakeHonkNoise();
+            car1.IsDrivable = true;
+            car1.MakeEngineNoise(car1.EngineNoise);
+            car1.MakeHonkNoise(car1.HonkNoise);
+            
             // 2) Object initializer
             var car2 = new Car()
             {
@@ -35,18 +38,17 @@ namespace CarLotSimulator
                 Make = "GMC",
                 Model = "Limited",
                 EngineNoise = "Engine noise 2.",
-                HonkNoise = "Honk 2!"
-                //MakeEngineNoise("Engine noise."),
-                //MakeHonkNoise("Honk!")
+                HonkNoise = "Honk 2!",
+                IsDrivable =true
+
             };
-            car2.MakeEngineNoise();
-            car2.MakeHonkNoise();
+            car2.MakeEngineNoise(car2.EngineNoise);
+            car2.MakeHonkNoise(car2.HonkNoise);
 
             //3) Constructor
             var car3 = new Car(2018, "Ford", "n/a", "Engine noise 3", "Honk 3!", true);
-
-            car3.MakeEngineNoise();
-            car3.MakeHonkNoise();
+            car3.MakeEngineNoise(car3.EngineNoise);
+            car3.MakeHonkNoise(car3.HonkNoise);
             //*************BONUS*************//
             carLot.ParkingLot.Add(car1);
             carLot.ParkingLot.Add(car2);

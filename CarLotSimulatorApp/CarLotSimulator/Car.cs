@@ -8,7 +8,8 @@ namespace CarLotSimulator
     {
        public Car()
         {
-
+            CarLot.numberOfCars++;
+          //ClassName.staticMember
         }
         
         //properties:

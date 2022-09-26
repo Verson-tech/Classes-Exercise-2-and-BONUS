@@ -54,7 +54,7 @@ namespace CarLotSimulator
             carLot.ParkingLot.Add(car2);
             carLot.ParkingLot.Add(car3);
             
-            
+            Console.WriteLine($"Number of cars created: {CarLot.numberOfCars} cars");
 
             foreach(var i in carLot.ParkingLot)
             {
